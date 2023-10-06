@@ -1,0 +1,153 @@
+.mainheader {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Zmieniamy na pozycję względną */
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.blackbg {
+    background-color: black;
+    /* text-align: center; */
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height:75px;
+} 
+.navbar_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar_1 a{
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+    /* Pasek wybor kina */
+
+    #wyborkina:before{
+        content: "🎬";
+    }
+    /* Pasek Logowanie */
+    .navbar_1 a:hover{
+        text-decoration:underline;
+    }
+    #logowanie:before{
+        content: "🙋‍♂️";
+    }
+    #logowanie {
+        margin-left: 20px;
+        border-right: 1px solid white;
+        padding:10px;
+        margin-right:10px;
+    }
+
+#Szukaj input[type="text"]{
+    border:transparent;
+    background-color: transparent;
+    width:100px;
+    color:aliceblue;
+    
+}
+
+#Szukaj{
+    border: 1px solid white;
+    border-radius: 7px;
+    margin-left:15px;
+    padding:5px;
+    color:white;
+}
+#Szukaj button[type="submit"] {
+    background: transparent; 
+    border: none; 
+}
+
+
+.jezyk button{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.jezyk .wybor_jezyka a{
+    background-color:rgb(255, 255, 255);
+
+    display:block;
+    color:black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+
+    
+}
+.jezyk .wybor_jezyka{
+    display: none;
+    position: absolute;
+    margin-right: 15px;
+    margin-left: 10px;
+
+}
+
+.jezyk:hover .wybor_jezyka{
+    display: block;
+    z-index: 1;
+}
+.jezyk{
+    display: inline-block;
+}
+.jezyk:hover button{
+    background-color: rgb(172, 174, 175);
+}
+.jezyk a:hover{
+    background-color: aqua;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.orangebg {
+    background-color: hsl(28,91%,54%);
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    position: relative; /* Pozycja względna */
+    display: flex; /* Ustawienie kontenera flexbox */
+    justify-content: center; /* Wyśrodkowanie elementów w poziomie */
+    align-items: center; /* Wyśrodkowanie elementów w pionie */
+    
+}
+ .orangebg li{
+    display: inline;
+}
+/*
+nav.orangebg a {
+    text-decoration: none;
+    color:rgb(8, 17, 17);
+    padding:20px;
+} */
+
+
