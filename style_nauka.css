@@ -1,3 +1,9 @@
+body{ 
+    margin-top: 145px;
+    background-color: black;
+}
+
+
 .mainheader {
     background-color: white;
     display: flex;
@@ -13,11 +19,12 @@
     /* text-align: center; */
     height: 85px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .logo img{
     height:75px;
+    margin-right:100px;
 } 
 .navbar_1 {
     display: flex;
@@ -115,39 +122,94 @@
 } 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .orangebg {
     background-color: hsl(28,91%,54%);
-    text-align: center;
     width: 100%;
     height: 50px;
-    position: relative; /* Pozycja względna */
-    display: flex; /* Ustawienie kontenera flexbox */
-    justify-content: center; /* Wyśrodkowanie elementów w poziomie */
-    align-items: center; /* Wyśrodkowanie elementów w pionie */
-    
 }
- .orangebg li{
-    display: inline;
+
+.orangebg ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-/*
-nav.orangebg a {
+.orangebg ul li{
+    list-style-type: none;
+}
+
+.orangebg ul li a{
     text-decoration: none;
-    color:rgb(8, 17, 17);
-    padding:20px;
-} */
+    margin:10px;
+    color:black;
+}
 
+.orangebg ul li a:hover{
+    color:aliceblue;
+}
 
+p {
+    font-size: 300%;
+    color: aliceblue;
+}
+
+.mainfooter{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height:350px;
+}
+
+.footer_menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mainfooter section:last-of-type a{
+    /* text-decoration: none;
+    color:rgb(182, 182, 182); */
+    margin-left: 5px;
+}
+.mainfooter a{
+    text-decoration: none;
+    color:rgb(182, 182, 182);
+}
+.mainfooter a:hover{
+    color:rgb(255, 255, 255);
+}
+
+.mainfooter li{
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+.mainfooter ul{
+    padding: 0;
+}
+
+.mainfooter section{
+    padding:30px;
+}
+#fblogo::before{
+    content: "0️⃣";
+}
+#instlogo::before{
+    content: "0️⃣";
+}
+#ytlogo::before{
+    content: "0️⃣";
+}
+#LinkedIn::before{
+    content: "0️⃣";
+}
+#andlogo::before{
+    content: "0️⃣";
+}
+#ioslogo::before{
+    content: "0️⃣";
+}
+#rights{
+    margin-bottom: 40px;
+}
