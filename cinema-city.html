@@ -10,38 +10,55 @@
     <link rel = "stylesheet" href = "style_nauka.css" >  
     <link href="Icons/bot_smile_robot_robo_chatbot_assistant_advisor_icon_256856.ico" type="image/x-icon" rel="shortcut icon">
 </head>
+
 <body>
     <header class="mainheader">
-        <nav class="blackbg">
-                <a target="_blank" href="http://127.0.0.1:5500/cinema-city.html#" class="logo" >
+        <nav class="mainheader__blackbg">
+                <a target="_blank" href="http://127.0.0.1:5500/cinema-city.html#" class="blackbg__logo" >
                     <img src="imgs/cinema_city_logo.webp" alt="ourLogo" >
                 </a> 
-                <ul class="navbar_1">
-                    <li id="wyborkina">
-                        <a  href="#">
-                            Wybierz swoje kino 
+                <ul class="blackbg__navbar">
+                    <li class="blackbg__item blackbg__item--choose_cinema">
+                        <a href="#" > 
+                            <svg width="21" height="30" viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 19C12.6739 19 11.4021 18.4732 10.4645 17.5355C9.52678 16.5979 9 15.3261 9 14C9 12.6739 9.52678 11.4021 10.4645 10.4645C11.4021 9.52678 12.6739 9 14 9C15.3261 9 16.5979 9.52678 17.5355 10.4645C18.4732 11.4021 19 12.6739 19 14C19 14.6566 18.8707 15.3068 18.6194 15.9134C18.3681 16.52 17.9998 17.0712 17.5355 17.5355C17.0712 17.9998 16.52 18.3681 15.9134 18.6194C15.3068 18.8707 14.6566 19 14 19ZM14 0C10.287 0 6.72601 1.475 4.1005 4.1005C1.475 6.72601 0 10.287 0 14C0 24.5 14 40 14 40C14 40 28 24.5 28 14C28 10.287 26.525 6.72601 23.8995 4.1005C21.274 1.475 17.713 0 14 0Z" fill="white"/>
+                            </svg> 
+                            <label>Wybierz swoje kino</label> 
                         </a>
                     </li>
-                    <li id="logowanie">
-                        <a href="#">
-                            Logowanie
-                        </a></li>
-                    <li id="Rejestracja">
-                        <a href="#">
-                            Rejestracja
-                        </a></li>
-                    <li id="Szukaj">
-                        <form action= "" method="post" >
-                            <input type="text"  name="szukaj" placeholder="Szukaj...">
-                            <button type="submit" style="display: none;"></button>
-                            <button type="submit" id="emojiSubmit">
-                                ✅ 
-                            </button>
+                    <li class="blackbg__item blackbg__item--login_and_registration">
+                        <a href="#">  
+                            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 0C18.1217 0 20.1566 0.842854 21.6569 2.34315C23.1571 3.84344 24 5.87827 24 8C24 10.1217 23.1571 12.1566 21.6569 13.6569C20.1566 15.1571 18.1217 16 16 16C13.8783 16 11.8434 15.1571 10.3431 13.6569C8.84285 12.1566 8 10.1217 8 8C8 5.87827 8.84285 3.84344 10.3431 2.34315C11.8434 0.842854 13.8783 0 16 0ZM16 20C24.84 20 32 23.58 32 28V32H0V28C0 23.58 7.16 20 16 20Z" fill="white"/>
+                                </svg>
+                            <label>Logowanie</label> 
+                        </a>
+                        <a href="#">Rejestracja</a>
+                    </li>
+                    <li class="blackbg__item blackbg__item--search">
+                        <form action="" method="post" class="blackbg__search-form">
+                            <div class="blackbg__search-container">
+                                <input type="text" name="szukaj" placeholder="Szukaj..." class="blackbg__search-input">
+                                <button type="submit" class="blackbg__search-button">
+                                    <svg width="20px" height="20px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="16" height="16" id="icon-bound" fill="none" />
+                                        <path d="M15.708,13.587l-3.675-3.675C12.646,8.92,13,7.751,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5S2.91,13,6.5,13 c1.251,0,2.42-0.354,3.412-0.967l3.675,3.675c0.389,0.389,1.025,0.389,1.414,0l0.707-0.707 C16.097,14.612,16.097,13.976,15.708,13.587z M3.318,9.682C2.468,8.832,2,7.702,2,6.5s0.468-2.332,1.318-3.182S5.298,2,6.5,2 s2.332,0.468,3.182,1.318C10.532,4.168,11,5.298,11,6.5s-0.468,2.332-1.318,3.182C8.832,10.532,7.702,11,6.5,11 S4.168,10.532,3.318,9.682z" fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
                         </form>
-                    </li> 
-                    <li class="jezyk">
+                    </li>
+                    <li class="blackbg__item blackbg__item--search_shrinked">
+                        <a>
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="16" height="16" id="icon-bound" fill="none" />
+                                <path d="M15.708,13.587l-3.675-3.675C12.646,8.92,13,7.751,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5S2.91,13,6.5,13 c1.251,0,2.42-0.354,3.412-0.967l3.675,3.675c0.389,0.389,1.025,0.389,1.414,0l0.707-0.707 C16.097,14.612,16.097,13.976,15.708,13.587z M3.318,9.682C2.468,8.832,2,7.702,2,6.5s0.468-2.332,1.318-3.182S5.298,2,6.5,2 s2.332,0.468,3.182,1.318C10.532,4.168,11,5.298,11,6.5s-0.468,2.332-1.318,3.182C8.832,10.532,7.702,11,6.5,11 S4.168,10.532,3.318,9.682z" fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="blackbg__item blackbg__item--language">
                         <button>PL</button>
-                        <nav class="wybor_jezyka">
+                        <nav class="blackbg__choose_language">
                             <a href="">PL</a>
                             <a href="">EN</a>  
                         </nav>
@@ -49,9 +66,16 @@
                     </li>
                 </ul>
         </nav>
-
-        <nav class="orangebg">
-            <ul>
+        <nav class="mainheader__orangebg">
+            <button>
+                <svg version="1.1"
+                id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="lines.svg" inkscape:version="0.48.4 r9939"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="20px" height="20px"
+                viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve">
+                <path id="rect3039" inkscape:connector-curvature="0" d="M0,0v240h1200V0H0z M0,480v240h1200V480H0z M0,960v240h1200V960H0z"/>
+                </svg>
+            </button>
+            <ul class="orangebg__navbar">
                 <li><a href="#">REPERTUAR</a></li>
                 <li><a href="#">OFERTY</a></li>
                 <li><a href="#">PREZENTY</a></li>
@@ -61,11 +85,17 @@
                 <li><a href="#">IMAX</a></li>
                 <li><a href="#">SCREENX </a></li>
                 <li><a href="#">VIP</a></li>
-            </ul>
+            </ul> 
         </nav>
     </header>
-
-        <p>
+    
+    <article class="movieposter_1">
+        <a target="_blank" href="http://127.0.0.1:5500/cinema-city.html#" >
+            <img src="imgs/movieposter_1.jpg" alt="ourLogo" > 
+        </a>
+    </article>
+    <main>
+        <p class="loremi">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, libero! Similique odit ullam laudantium! Minima nobis impedit, assumenda ipsum consequatur quis odio porro sed ipsa tempora harum in labore fugit.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquid maxime nisi ut, blanditiis alias ex exercitationem eligendi. Ex quas, sint laborum nesciunt aspernatur temporibus omnis. Optio nisi corrupti aut!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil id illum ea cum quibusdam mollitia, pariatur laborum nulla a vero. Sunt laborum molestiae assumenda totam nobis voluptas atque ut nemo.
@@ -73,10 +103,49 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore porro placeat alias. Eius veritatis consequatur voluptatibus dolorem voluptates nemo dignissimos nostrum tempora suscipit expedita, laborum laboriosam saepe earum error.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, veniam at enim, sunt corrupti assumenda harum doloribus, iure perferendis molestias distinctio! Accusamus ut vitae saepe nisi atque vel voluptas sapiente.
         </p>
+
+        <article id="blog">
+            <h1 >BLOG</h1>
+            <nav class="Blog__nav">
+                <section>
+                    <a href="#"><img src="BLOG\510x340 (1).jpg">
+                    <p>Pora na trochę świątecznej magii! „Uwierz w Mikołaja” przedpremierowo na listopadowym Ladies Night</p>
+                    </a>    
+                </section>
+                <section>
+                    <a href="#"><img src="BLOG\510x340 (2).jpg">
+                    <p>Maraton Igrzysk Śmierci na wielkim ekranie. Przeżyj to jeszcze raz zanim obejrzysz najnowszą część serii</p>
+                    </a>
+                </section>
+                <section>
+                    <a href="#"><img src="BLOG\510x340.jpg">
+                    <p>TAYLOR SWIFT THE ERAS TOUR od 13 października na wielkim ekranie w Cinema City!</p>
+                    </a>
+                </section>
+                <section>
+                    <a href="#"><img src="BLOG\CC_cinema-city_510x340.jpg">
+                    <p>Bilety na wszystkie filmy i formaty w cenie 12 zł! Celebruj Święto Kina razem z nami</p>
+                    </a>
+                </section>
+                <section>
+                    <a href="#"><img src="BLOG\Cinema_City_Imax_day_510x340.jpg">
+                    <p>Greckie wakacje w październiku? Zobacz Moje Wielkie Greckie Wesele 3 na Ladies Night!</p>
+                    </a>
+                </section>
+                <section>
+                    <a href="#"><img src="BLOG\Frame 41.jpg">
+                    <p>24 września postaw na IMAX! Czekają na Ciebie megahity na wielkim ekranie w mega cenie</p>
+                    </a>
+                </section>
+            </nav>
+            <button id="blog__button">
+                <p>Zobacz wszystkie artykuły na blogu</p>
+            </button>
+        </main>
         <hr>
 
     <footer class="mainfooter">
-        <nav class="footer_menu">
+        <nav class="mainfooter__menu">
             <section>
                 <h4 class="footer-heading">O NAS</h4>
                 <ul>
@@ -121,62 +190,6 @@
         </nav>
         <h5 id="rights">Wszystkie prawa zastrzeżone Filip</h5>
     </footer>
-            <!-- <nav>
-                <ul class="footer_menu">
-                    <li>
-
-                        <ul>
-                            <h4 class="footer_h4">O NAS</h4>
-                            <li>Cinema City Poland</li>
-                            <li>Pracuj z nami</li>
-                            <li>Newsletter</li>
-                            <li>Kontakt</li>
-                        </ul>
-                    </li>
-                    <li>
-
-                        <ul>
-                            <h4 class="footer_h4">LINKI</h4>
-                            <li>Global City Holdings</li>
-                            <li>Reklama w kinach</li>
-                            <li>Forum Film Poland</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <h4 class="footer_h4">INFORMACJE</h4>
-                            <li>Regulacje</li>
-                            <li>Polityka prywatności</li>
-                            <li>Zarządaj pilkami cookies</li>
-                            <li>Polityka cookies</li>
-                            <li>Informacja o strategii podatkowej</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-
-
-                                <ul>
-                                    <h4 class="footer_h4">OBSERWUJ NAS</h4>
-                                    <li>Facebook</li>
-                                    <li>Instagram</li>
-                                    <li>YouTube</li>
-                                    <li>LinkedIn</li>
-                                </ul>
-
-                        </ul>
-                        <ul>
-                            <ul>
-                                <h4 class="footer_h4">POBIERZ APLIKACJE</h4>
-                                <li>Android</li>
-                                <li>iOS</li>
-                            </ul>
-
-                        </ul>
-                    </li>
-                </ul>
-            </nav> -->
-
-
+    
 </body>
 </html>

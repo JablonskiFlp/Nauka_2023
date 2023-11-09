@@ -1,9 +1,16 @@
 body{ 
-    margin-top: 145px;
+    margin-top: 135px;
     background-color: black;
+    margin-left: 0;
+    margin-right: 0;
+    /* container-type: inline-size; */
 }
 
-
+.loremi{
+    font-size: 300%;
+    color: aliceblue;
+    max-width: 1000px;
+}
 .mainheader {
     background-color: white;
     display: flex;
@@ -12,9 +19,13 @@ body{
     width: 100%;
     left: 0;
     top: 0;
+    /* container-type: inline-size;
+    container-name: mainheader; */
 }
 
-.blackbg {
+
+/* Top header part */
+.mainheader__blackbg {
     background-color: black;
     /* text-align: center; */
     height: 85px;
@@ -22,63 +33,92 @@ body{
     justify-content: center;
     align-items: center;
 }
-.logo img{
+
+/* CinemaCity Logo */
+.blackbg__logo img{
     height:75px;
     margin-right:100px;
 } 
-.navbar_1 {
+
+.blackbg__navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.navbar_1 a{
+.blackbg__navbar a{
     text-decoration: none;
     color:white;
     font-size: 1em;
     font-family:Arial, Helvetica, sans-serif;
+}
+.blackbg__item--choose_cinema a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
 
 }
-    /* Pasek wybor kina */
+.blackbg__item--choose_cinema label{
+    margin: 15px;
+    white-space: nowrap;
 
-    #wyborkina:before{
-        content: "🎬";
-    }
-    /* Pasek Logowanie */
-    .navbar_1 a:hover{
-        text-decoration:underline;
-    }
-    #logowanie:before{
-        content: "🙋‍♂️";
-    }
-    #logowanie {
-        margin-left: 20px;
-        border-right: 1px solid white;
-        padding:10px;
-        margin-right:10px;
-    }
-
-#Szukaj input[type="text"]{
-    border:transparent;
-    background-color: transparent;
-    width:100px;
-    color:aliceblue;
-    
 }
 
-#Szukaj{
+.blackbg__item--login_and_registration, .blackbg__item--login_and_registration a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.blackbg__item--login_and_registration svg{
+    margin:10px;
+}
+
+.blackbg__item a:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.blackbg__search-form {
+    position: relative;
+}
+
+/* Stylizacja kontenera */
+.blackbg__search-container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+/* Stylizacja pola input */
+.blackbg__search-input {
     border: 1px solid white;
+    padding:10px;
     border-radius: 7px;
-    margin-left:15px;
-    padding:5px;
-    color:white;
+    background-color: rgb(51, 46, 46);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-right: 40px; /* Dostosuj szerokość przycisku */
 }
-#Szukaj button[type="submit"] {
-    background: transparent; 
-    border: none; 
+.blackbg__search-input:focus {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+/* Stylizacja przycisku */
+.blackbg__search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
 }
 
 
-.jezyk button{
+
+
+.blackbg__item--language button{
     background-color:rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     padding: 8px 15px;
@@ -87,9 +127,8 @@ body{
     margin-right: 15px;
     margin-left: 10px;
 }
-.jezyk .wybor_jezyka a{
+.blackbg__item--language .blackbg__choose_language a{
     background-color:rgb(255, 255, 255);
-
     display:block;
     color:black;
     text-decoration: none;
@@ -99,58 +138,56 @@ body{
 
     
 }
-.jezyk .wybor_jezyka{
+.blackbg__choose_language{
     display: none;
     position: absolute;
     margin-right: 15px;
     margin-left: 10px;
-
 }
 
-.jezyk:hover .wybor_jezyka{
+.blackbg__item--language:hover .blackbg__choose_language{
     display: block;
     z-index: 1;
 }
-.jezyk{
+.blackbg__item--language{
     display: inline-block;
 }
-.jezyk:hover button{
+.blackbg__item--language:hover button{
     background-color: rgb(172, 174, 175);
 }
-.jezyk a:hover{
+.blackbg__item--language a:hover{
     background-color: aqua;
 } 
 
 
-.orangebg {
+.mainheader__orangebg {
     background-color: hsl(28,91%,54%);
     width: 100%;
     height: 50px;
 }
 
-.orangebg ul{
+.mainheader__orangebg ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.orangebg ul li{
+.mainheader__orangebg ul li{
     list-style-type: none;
 }
 
-.orangebg ul li a{
+.mainheader__orangebg ul li a{
     text-decoration: none;
     margin:10px;
     color:black;
 }
 
-.orangebg ul li a:hover{
+.mainheader__orangebg ul li a:hover{
     color:aliceblue;
 }
 
-p {
-    font-size: 300%;
-    color: aliceblue;
+.movieposter_1 img{
+    width: 100%;
 }
 
 .mainfooter{
@@ -163,33 +200,33 @@ p {
     height:350px;
 }
 
-.footer_menu{
+.mainfooter__menu{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.mainfooter section:last-of-type a{
+.mainfooter__menu section:last-of-type a{
     /* text-decoration: none;
     color:rgb(182, 182, 182); */
     margin-left: 5px;
 }
-.mainfooter a{
+.mainfooter__menu a{
     text-decoration: none;
     color:rgb(182, 182, 182);
 }
-.mainfooter a:hover{
+.mainfooter__menu a:hover{
     color:rgb(255, 255, 255);
 }
 
-.mainfooter li{
+.mainfooter__menu li{
     list-style-type: none;
     margin-bottom: 7px;
 }
-.mainfooter ul{
+.mainfooter__menu ul{
     padding: 0;
 }
 
-.mainfooter section{
+.mainfooter__menu section{
     padding:30px;
 }
 #fblogo::before{
@@ -213,3 +250,144 @@ p {
 #rights{
     margin-bottom: 40px;
 }
+.mainheader__orangebg button{
+    display: none;
+} 
+
+.blackbg__item--search_shrinked{
+    display: none;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#blog
+{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+    max-width: 1050px;
+}
+#blog h1
+{
+    margin-left: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Blog__nav
+{
+    display: flex;
+    flex-direction: row;
+}
+.Blog__nav section
+{
+    width:150px;
+    margin:10px;
+}
+.Blog__nav img
+{
+    width: 150px;
+    transition: opacity 0.3s;
+}
+.Blog__nav img:hover
+{
+    opacity: 0.7;
+}
+
+.Blog__nav p
+{
+    color: aliceblue;
+    font-size: 90%;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.Blog__nav a
+{
+    text-decoration: none;
+}
+
+#blog__button
+{
+    width:300px;
+    border:2px solid white;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    box-shadow: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#blog__button p
+{
+    margin: 6px;
+    font-size: larger;
+    cursor: pointer;
+
+
+}
+
+
+
+
+@media (max-width: 1050px) {
+    body{
+    margin-top: 85px;
+    }
+    .mainheader{
+        flex-direction:row;
+        width: 100%;
+    }
+    /* Modify other styles as needed for smaller screens */
+    .mainheader__blackbg {
+        justify-content: space-between;
+        width: 90%;
+    }
+    .blackbg__item--choose_cinema{
+        display:none;
+    }
+    .blackbg__item--login_and_registration label{
+        display:none;
+    }
+    .blackbg__item--login_and_registration a:last-child{
+        display:none;
+    }
+    .blackbg__item--search{
+        display:none;
+    }
+    .blackbg__item--search_shrinked{
+        display: block;
+        margin-right: 20px;
+    }
+    .blackbg__item--language{
+        display:none;
+    }
+
+    .mainheader__orangebg{
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        width:10%;
+    }
+    .mainheader__orangebg button{
+        display: block;
+        height:85px;
+        background-color: hsl(28,91%,54%);
+        border: none;
+        cursor: pointer;
+    } 
+
+    .mainheader__orangebg ul{
+        display: none;
+    }
+
+    .mainheader__orangebg:hover ul{
+        display:flex;
+        flex-direction: column;
+    }
+
+}
+
