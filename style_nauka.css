@@ -197,7 +197,7 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
-    height:350px;
+    height:auto;
 }
 
 .mainfooter__menu{
@@ -272,6 +272,24 @@ main
     font-family:'Times New Roman', Times, serif;
     max-width: 1050px;
 }
+
+.aside_nav__nav
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width:1050px;
+}
+
+.aside_nav__nav img
+{
+    transition: opacity 0.3s;
+}
+.aside_nav__nav img:hover
+{
+    opacity: 0.7;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #blog h1
 {
     margin-left: 20px;
@@ -330,11 +348,141 @@ main
 
 }
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.toolbar
+{
+    max-width: 1050px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.toolbar__nav
+{
+    margin-top:30px;
+    margin-bottom:30px;
+    width: 1050px;
+}
+.toolbar__nav ul
+{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.toolbar__nav li
+{
+    color:rgb(206, 206, 206);
+    margin-right: 14px;
+    font-size: 130%;
+}
+
+.toolbar__nav label
+{
+    padding-bottom: 10px;
+}
+
+.toolbar__nav label:hover
+{
+    color:white;
+    cursor: pointer;
+
+}
 
 
+/* +++++++IMGS+++++++++ */
+
+.toolbar__art
+{
+    display: flex;
+}
+.toolbar__art figure
+{
+    display:flex;
+    width: 70%;
+    margin: 0;
+}
+
+.toolbar__art img
+{
+    height:270px;
+    border-radius: 12px;
+    padding-right: 20px;
+}
+
+.toolbar__art img:hover
+{
+    opacity: 0.8;
+}
+
+.toolbar__art div img
+{
+    height:125px;
+    width: auto;
+    transition: opacity 0.3s;
+}
+
+.toolbar__art div img:first-child
+{
+    margin-bottom: 15px;
+}
+
+/* +++++++++ASIDE++++++++++++ */
+.toolbar__art aside
+{
+    color:aliceblue;
+    width:300px;
+}
+
+.toolbar__art aside a 
+{
+    color:aliceblue;
+    text-decoration: none;
+}
+.toolbar__art aside h6
+{
+    color:hsl(28,91%,54%);
+    margin: 0;
+    font-size: 120%;
+}
+
+.toolbar__art aside p
+{
+    margin-top: 7px;
+    font-size: 80%;
+}
+.toolbar__art aside a:hover
+{
+    text-decoration:underline;
+}
+
+.toolbar__art aside a:hover h6
+{
+    color:rgb(146, 146, 146);
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ /* .toolbar__art {
+    display: none;
+} */
+
+.toolbar__nav input[type="radio"]:checked + .toolbar__art 
+{
+    display: flex;
+}
+
+.toolbar__nav input[type="radio"]:checked + label {
+    border-bottom: 4px solid hsl(28,91%,54%);
+} 
+
+.toolbar__nav input[type="radio"] {
+    display: none;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @media (max-width: 1050px) {
-    body{
+    body
+    {
     margin-top: 85px;
     }
     .mainheader{
@@ -389,5 +537,100 @@ main
         flex-direction: column;
     }
 
+    #blog 
+    {
+        width:auto;
+        margin-right:20px ;
+    }
+    .Blog__nav 
+    {
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* max-width: 1000px;
+        margin: 30px auto; */
+    }
+    .Blog__nav section
+    {
+        width: 100%;
+    }
+    .Blog__nav img
+    {
+        width: 100%;
+    }
+
 }
 
+@media (max-width: 1200px)
+{   
+    .toolbar 
+    {
+        width: auto;
+        height:auto;
+    }
+    .toolbar__art
+    {
+        padding-bottom:40px;
+    }
+
+    .toolbar__art aside 
+    {
+        display:none;
+    }
+
+    .toolbar__art figure
+    {
+        width:100%;
+        height:auto;
+
+    }
+
+    .toolbar__art-first_img
+    {
+        width: 50%;
+        height:auto;
+    }
+
+    .toolbar__art-first_img img 
+    {
+        width: 90%;
+    }
+
+    .toolbar__art div  
+    {
+        width: 50%;
+        /* padding-left: 20px; */
+    }
+    .toolbar__art div a
+    {
+        width: 100%;
+    }
+    .toolbar__art div a img
+    {
+        width: 91%;
+        height:auto;
+    }
+    .toolbar__art img
+    {
+        width: 90%;
+        height:auto;
+    }
+}
+
+@media ( max-width:800px)
+{
+    .Blog__nav 
+    {
+        display: block;
+
+    } 
+    .Blog__nav section 
+    {
+        margin-bottom: 30px;
+    }
+    .aside_nav__nav
+    {
+        display: block;
+    }
+}
