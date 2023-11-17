@@ -1,0 +1,339 @@
+body{ 
+    margin-top: 135px;
+    background-color: black;
+    margin-left: 0;
+    margin-right: 0;
+    /* container-type: inline-size; */
+}
+
+
+.mainheader {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Zmieniamy na pozycję względną */
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* container-type: inline-size;
+    container-name: mainheader; */
+}
+
+/* Top header part */
+.mainheader__blackbg {
+    background-color: black;
+    /* text-align: center; */
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CinemaCity Logo */
+.blackbg__logo img{
+    height:75px;
+    margin-right:100px;
+} 
+
+.blackbg__navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blackbg__navbar a{
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.blackbg__item--choose_cinema a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blackbg__item--choose_cinema label{
+    margin: 15px;
+    white-space: nowrap;
+
+}
+
+.blackbg__item--login_and_registration, .blackbg__item--login_and_registration a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.blackbg__item--login_and_registration svg{
+    margin:10px;
+}
+
+.blackbg__item a:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.blackbg__search-form {
+    position: relative;
+}
+
+/* Stylizacja kontenera */
+.blackbg__search-container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+/* Stylizacja pola input */
+.blackbg__search-input {
+    border: 1px solid white;
+    padding:10px;
+    border-radius: 7px;
+    background-color: rgb(51, 46, 46);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-right: 40px; 
+}
+.blackbg__search-input:focus {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+/* Stylizacja przycisku */
+.blackbg__search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+}
+
+.blackbg__item--language button{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.blackbg__item--language .blackbg__choose_language a{
+    background-color:rgb(255, 255, 255);
+    display:block;
+    color:black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.blackbg__choose_language{
+    display: none;
+    position: absolute;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.blackbg__item--language:hover .blackbg__choose_language{
+    display: block;
+    z-index: 2;
+}
+.blackbg__item--language{
+    display: inline-block;
+}
+.blackbg__item--language:hover button{
+    background-color: rgb(172, 174, 175);
+}
+.blackbg__item--language a:hover{
+    background-color: aqua;
+} 
+
+
+.mainheader__orangebg {
+    background-color: hsl(28,91%,54%);
+    width: 100%;
+    height: 50px;
+}
+
+.mainheader__orangebg ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.mainheader__orangebg ul li{
+    list-style-type: none;
+}
+
+.mainheader__orangebg ul li a{
+    text-decoration: none;
+    margin:10px;
+    color:black;
+}
+
+.mainheader__orangebg ul li a:hover{
+    color:aliceblue;
+}
+
+.mainheader__orangebg button{
+    display: none;
+} 
+
+.blackbg__item--search_shrinked{
+    display: none;
+}
+
+
+
+/*++++++++++++++++++KONIEC NAGŁOWKA+++++++++++++++++++++++++++*/
+
+/* nawigacja po stronach */
+.start_blog
+{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 950px;
+    margin-top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+.start_blog a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.start_blog p::before
+{
+    content:">";
+    margin: 10px;
+    opacity: 0.6;
+}
+
+/*++++++++++++++++++KONIEC NAWIGACJI PO STRONACH+++++++++++++++++++++++++++*/
+
+/* BLOOOG */
+
+.Blog 
+{
+    margin-top: 70px;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.Blog__section
+{
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+.Blog__section-header a
+{
+    text-decoration: none;
+    color: hsl(28,91%,54%);
+    font-size: 160%;
+}
+
+.Blog__section-header a:hover
+{
+    text-decoration: underline;
+}
+
+.Blog__section-header p
+{
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.Blog__section-main 
+{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.Blog__section-main a
+{
+    width:50%;
+}
+.Blog__section-main a img
+{
+    width:100%;
+    transition: opacity 0.3s;
+}
+.Blog__section-main a img:hover
+{
+    opacity: 0.8;
+}
+
+.Blog__section-main-text
+{
+    width:50%;
+    margin-left: 20px;
+}
+
+.Blog__section-main-text>a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+    opacity: 0.5;
+    position:relative;
+}
+
+.Blog__section-main-text>a:hover
+{
+    text-decoration: underline;
+}
+
+.Blog__section-icons
+{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.Blog__section-icons a
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease,
+                color 0.3s ease;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+}
+
+.Blog__section-icons #fb:hover
+{
+    transform: translateY(-3px);
+
+    color: hsl(28,91%,54%);
+}
+.Blog__section-icons #T:hover
+{
+    transform: translateY(-3px);
+    color: hsl(28,91%,54%);
+}
+.Blog__section-icons #M:hover
+{
+    transform: translateY(-3px);
+    color: hsl(28,91%,54%);
+}

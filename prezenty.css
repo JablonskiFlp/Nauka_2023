@@ -1,0 +1,299 @@
+body{ 
+    margin-top: 135px;
+    background-color: black;
+    margin-left: 0;
+    margin-right: 0;
+    /* container-type: inline-size; */
+}
+
+
+.mainheader {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Zmieniamy na pozycję względną */
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* container-type: inline-size;
+    container-name: mainheader; */
+}
+
+/* Top header part */
+.mainheader__blackbg {
+    background-color: black;
+    /* text-align: center; */
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CinemaCity Logo */
+.blackbg__logo img{
+    height:75px;
+    margin-right:100px;
+} 
+
+.blackbg__navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blackbg__navbar a{
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.blackbg__item--choose_cinema a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blackbg__item--choose_cinema label{
+    margin: 15px;
+    white-space: nowrap;
+
+}
+
+.blackbg__item--login_and_registration, .blackbg__item--login_and_registration a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.blackbg__item--login_and_registration svg{
+    margin:10px;
+}
+
+.blackbg__item a:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.blackbg__search-form {
+    position: relative;
+}
+
+/* Stylizacja kontenera */
+.blackbg__search-container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+/* Stylizacja pola input */
+.blackbg__search-input {
+    border: 1px solid white;
+    padding:10px;
+    border-radius: 7px;
+    background-color: rgb(51, 46, 46);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-right: 40px; 
+}
+.blackbg__search-input:focus {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+/* Stylizacja przycisku */
+.blackbg__search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+}
+
+.blackbg__item--language button{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.blackbg__item--language .blackbg__choose_language a{
+    background-color:rgb(255, 255, 255);
+    display:block;
+    color:black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.blackbg__choose_language{
+    display: none;
+    position: absolute;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.blackbg__item--language:hover .blackbg__choose_language{
+    display: block;
+    z-index: 2;
+}
+.blackbg__item--language{
+    display: inline-block;
+}
+.blackbg__item--language:hover button{
+    background-color: rgb(172, 174, 175);
+}
+.blackbg__item--language a:hover{
+    background-color: aqua;
+} 
+
+
+.mainheader__orangebg {
+    background-color: hsl(28,91%,54%);
+    width: 100%;
+    height: 50px;
+}
+
+.mainheader__orangebg ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.mainheader__orangebg ul li{
+    list-style-type: none;
+}
+
+.mainheader__orangebg ul li a{
+    text-decoration: none;
+    margin:10px;
+    color:black;
+}
+
+.mainheader__orangebg ul li a:hover{
+    color:aliceblue;
+}
+
+.mainheader__orangebg button{
+    display: none;
+} 
+
+.blackbg__item--search_shrinked{
+    display: none;
+}
+
+
+
+/*++++++++++++++++++KONIEC NAGŁOWKA+++++++++++++++++++++++++++*/
+
+/* nawigacja po stronach */
+.start_blog
+{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 950px;
+    margin-top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+.start_blog a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.start_blog p::before
+{
+    content:">";
+    margin: 10px;
+    opacity: 0.6;
+}
+
+/*++++++++++++++++++KONIEC NAWIGACJI PO STRONACH+++++++++++++++++++++++++++*/
+
+.Prezenty  
+{
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.Prezenty__header
+{
+    width: 1050px;
+}
+.Prezenty__header h5
+{
+    font-size:250%;
+    margin:0;
+    padding-bottom: 20px;
+}
+.Prezenty__header p
+{
+    font-size: 120%;
+}
+.Prezenty__section
+{
+    width: 1050px;
+}
+.Prezenty__section
+{
+    display: flex;
+}
+.Prezenty__section div
+{
+    padding: 15px;
+    margin: 8px;
+    border: 2px solid rgb(95, 93, 93);
+    border-radius: 6px;
+}
+.Prezenty__section div h4
+{
+    text-transform: uppercase;
+}
+.Prezenty__section a
+{
+    color: black;
+    text-align: center;
+    border: 2px solid rgb(95, 93, 93);
+    border-radius: 6px;
+    background-color: hsl(28,91%,54%);
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    padding: 7px;
+}
+.Prezenty__section a:hover
+{
+    background-color: hsl(28, 81%, 48%);
+}
+.Prezenty__aside
+{
+    width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    border-top:2px solid rgb(95, 93, 93);
+    border-bottom: 2px solid rgb(95, 93, 93);
+    padding: 20px;
+}
+.Prezenty__aside a
+{
+    color: hsl(28,91%,54%);
+    text-decoration: none;
+    margin-left: 7px;
+}
+.Prezenty__aside a:hover
+{
+    text-decoration: underline;
+}
