@@ -1,0 +1,17 @@
+
+.aside_nav__nav
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width:1050px;
+}
+
+.aside_nav__nav img
+{
+    transition: opacity 0.3s;
+}
+.aside_nav__nav img:hover
+{
+    opacity: 0.7;
+}

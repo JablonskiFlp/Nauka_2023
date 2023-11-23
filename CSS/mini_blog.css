@@ -1,0 +1,57 @@
+#blog h1
+{
+    margin-left: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Blog__nav
+{
+    display: flex;
+    flex-direction: row;
+}
+.Blog__nav section
+{
+    width:150px;
+    margin:10px;
+}
+.Blog__nav img
+{
+    width: 150px;
+    transition: opacity 0.3s;
+}
+.Blog__nav img:hover
+{
+    opacity: 0.7;
+}
+
+.Blog__nav p
+{
+    color: aliceblue;
+    font-size: 90%;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.Blog__nav a
+{
+    text-decoration: none;
+}
+
+#blog__button
+{
+    width:300px;
+    border:2px solid white;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    box-shadow: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#blog__button p
+{
+    margin: 6px;
+    font-size: larger;
+    cursor: pointer;
+
+
+}

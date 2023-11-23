@@ -1,0 +1,201 @@
+.mainheader {
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index:10;
+}
+
+/* Top header part */
+.mainheader__blackbg {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    height: 80px;
+}
+
+/* CinemaCity Logo */
+.blackbg__logo img{
+    height:75px;
+    margin-right:35px;
+} 
+
+.blackbg__navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blackbg__navbar a{
+    text-decoration: none;
+    color:white;
+}
+
+.blackbg__item--choose_cinema a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blackbg__item--choose_cinema label{
+    margin: 15px;
+    white-space: nowrap;
+
+}
+
+.blackbg__item--login_and_registration, .blackbg__item--login_and_registration a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.blackbg__item--login_and_registration svg{
+    margin:10px;
+}
+
+.blackbg__item a:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.blackbg__search-form {
+    position: relative;
+}
+
+/* Stylizacja kontenera */
+.blackbg__search-container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+/* Stylizacja pola input */
+.blackbg__search-input {
+    border: 1px solid white;
+    padding:10px;
+    border-radius: 7px;
+    background-color: rgb(51, 46, 46);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-right: 40px; 
+}
+.blackbg__search-input:focus {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+/* Stylizacja przycisku */
+.blackbg__search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+}
+
+.blackbg__item--language button{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.blackbg__item--language .blackbg__choose_language a{
+    background-color:rgb(255, 255, 255);
+    display:block;
+    color:black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.blackbg__choose_language{
+    display: none;
+    position: absolute;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.blackbg__item--language:hover .blackbg__choose_language{
+    display: block;
+    z-index: 2;
+}
+.blackbg__item--language{
+    display: inline-block;
+}
+.blackbg__item--language:hover button{
+    background-color: rgb(172, 174, 175);
+}
+.blackbg__item--language a:hover{
+    background-color: aqua;
+} 
+
+
+.mainheader__orangebg 
+{
+    background-color: hsl(28,91%,54%);
+    width: 100%;
+    height: 50px;
+}
+
+.mainheader__orangebg-navbar 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height:50px;
+    padding-left: 0;
+}
+.mainheader__orangebg-navbar  li
+{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:70%;
+    border-left: 1px solid rgb(80, 76, 76) ;
+    padding-left:20px ;
+    padding-right:20px ;
+
+}
+.mainheader__orangebg-navbar  li:last-child
+{
+    border-right: 1px solid rgb(80, 76, 76) ;
+
+}
+
+.mainheader__orangebg-navbar  li a
+{
+    text-decoration: none;
+    color:black;
+}
+
+.mainheader__orangebg-navbar  li a:hover
+{
+    color:aliceblue;
+}
+
+.mainheader__orangebg button
+{
+    display: none;
+} 
+
+.blackbg__item--search_shrinked
+{
+    display: none;
+}
+

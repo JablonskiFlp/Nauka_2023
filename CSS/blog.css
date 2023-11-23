@@ -1,0 +1,150 @@
+body{ 
+    margin-top: 135px;
+    background-color: black;
+    margin-left: 0;
+    margin-right: 0;
+}
+.start_blog
+{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 950px;
+    margin-top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+.start_blog a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.start_blog p::before
+{
+    content:">";
+    margin: 10px;
+    opacity: 0.6;
+}
+
+/*++++++++++++++++++KONIEC NAWIGACJI PO STRONACH+++++++++++++++++++++++++++*/
+
+/* BLOOOG */
+
+.Blog 
+{
+    margin-top: 70px;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.Blog__section
+{
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+.Blog__section-header a
+{
+    text-decoration: none;
+    color: hsl(28,91%,54%);
+    font-size: 160%;
+}
+
+.Blog__section-header a:hover
+{
+    text-decoration: underline;
+}
+
+.Blog__section-header p
+{
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.Blog__section-main 
+{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.Blog__section-main a
+{
+    width:50%;
+}
+.Blog__section-main a img
+{
+    width:100%;
+    transition: opacity 0.3s;
+}
+.Blog__section-main a img:hover
+{
+    opacity: 0.8;
+}
+
+.Blog__section-main-text
+{
+    width:50%;
+    margin-left: 20px;
+}
+
+.Blog__section-main-text>a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+    opacity: 0.5;
+    position:relative;
+}
+
+.Blog__section-main-text>a:hover
+{
+    text-decoration: underline;
+}
+
+.Blog__section-icons
+{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.Blog__section-icons a
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease,
+                color 0.3s ease;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+}
+
+.Blog__section-icons #fb:hover
+{
+    transform: translateY(-3px);
+
+    color: hsl(28,91%,54%);
+}
+.Blog__section-icons #T:hover
+{
+    transform: translateY(-3px);
+    color: hsl(28,91%,54%);
+}
+.Blog__section-icons #M:hover
+{
+    transform: translateY(-3px);
+    color: hsl(28,91%,54%);
+}
