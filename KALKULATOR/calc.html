@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "calc.css" >  
+    <title>My Calc</title>
+</head>
+<body>
+    <div class="container">
+        <div class="my_calc">
+            <div class="my_calc__title">
+                <h2>My Calculator</h2>
+            </div>
+            <div class="my_calc__working_space">
+                <div class="my_calc__working_space__buttons">
+                    <button id="my_calc__working_space__eq">=</button>
+                    <button id="my_calc__working_space__back">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path d="M8.354 2.646a.5.5 0 0 0-.707 0l-6 6a.5.5 0 0 0 0 .708l6 6a.5.5 0 0 0 .707-.708L3.707 9H14.5a.5.5 0 0 0 0-1H3.707l4.647-4.646a.5.5 0 0 0 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="my_calc__working_space__current_operation">
+                    <p id="my_calc__working_space__saved_number"></p>
+                    <p id="my_calc__working_space__current_number">0</p>
+                </div>
+            </div>
+            <div class="my_calc__operators">
+                <button id="button_7">7</button>
+                <button id="button_8">8</button>
+                <button id="button_9">9</button>
+                <button id="button_+">+</button>
+                <button id="button_4">4</button>
+                <button id="button_5">5</button>
+                <button id="button_6">6</button>
+                <button id="button_/">/</button>
+                <button id="button_1">1</button>
+                <button id="button_2">2</button>
+                <button id="button_3">3</button>
+                <button id="button_*">x</button>
+                <button id="button_C">C</button>
+                <button id="button_0">0</button>
+                <button id="button_,">,</button>
+                <button id="button_-">-</button>
+            </div>
+        </div>
+    </div>
+    <script src = "calc.js"></script> 
+
+</body>
+</html>
